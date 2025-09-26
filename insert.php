@@ -1,7 +1,7 @@
 <?php
 include 'db_connect.php';
 
-$message = ""; // for showing alerts
+$message = ""; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name   = trim($_POST['name']);
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <div class="card-body">
 
-      <!-- Show alert messages -->
+      
       <?= $message ?>
 
       <form method="POST" action="insert.php">
