@@ -1,7 +1,7 @@
 <?php
 include 'db_connect.php';
 
-// Show success/error messages from redirects
+
 $msg = "";
 if (isset($_GET['msg'])) {
     if ($_GET['msg'] == "added") {
@@ -32,7 +32,7 @@ $result = $conn->query($sql);
     <a href="insert.php" class="btn btn-success">➕ Add Student</a>
   </div>
 
-  <!-- Show alert message -->
+ 
   <?= $msg ?>
 
   <div class="card shadow-sm">
